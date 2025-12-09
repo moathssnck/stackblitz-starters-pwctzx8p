@@ -3,26 +3,93 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Contact</title>
+    <title>Contact Us</title>
     <meta name="robots" content="index,follow" />
+    <style>
+      body {
+        font-family: system-ui;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 0 16px;
+        line-height: 1.6;
+        background: #f7f7f7;
+        color: #222;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .card {
+        background: #fff;
+        padding: 24px;
+        border-radius: 12px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      }
+      label {
+        display: block;
+        margin-top: 16px;
+        font-weight: 600;
+      }
+      input, textarea {
+        width: 100%;
+        padding: 12px;
+        margin-top: 6px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 15px;
+      }
+      textarea {
+        min-height: 120px;
+        resize: vertical;
+      }
+      button {
+        margin-top: 20px;
+        padding: 14px 22px;
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        background: #4b79ff;
+        color: #fff;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #3a63d9;
+      }
+      .info-box {
+        margin-top: 32px;
+        padding: 20px;
+        border-radius: 12px;
+        background: #fff;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      }
+      a { color: #4b79ff; }
+    </style>
   </head>
 
-  <body
-    style="
-      font-family: system-ui;
-      max-width: 800px;
-      margin: 40px auto;
-      line-height: 1.6;
-      padding: 0 16px;
-    "
-  >
+  <body>
     <h1>Contact Us</h1>
-    <p>You can reach us using the information below.</p>
 
-    <h2>Email</h2>
-    <p><a href="mailto:admin@exaposma.com">admin@exaposma.com</a></p>
+    <div class="card">
+      <form>
+        <label>Your Name</label>
+        <input type="text" placeholder="Enter your name" required />
 
-    <h2>Address</h2>
-    <p>City, Country (optional)</p>
+        <label>Your Email</label>
+        <input type="email" placeholder="you@example.com" required />
+
+        <label>Your Message</label>
+        <textarea placeholder="Write your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <div class="info-box">
+      <h2>Other Ways to Reach Us</h2>
+      <p>Email: <a href="mailto:admin@example.com">admin@opkmn.com</a></p>
+      <p>Support Hours: 9:00 AM to 6:00 PM</p>
+      <p>We respond within 24–48 hours.</p>
+    </div>
   </body>
 </html>
